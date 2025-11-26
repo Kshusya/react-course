@@ -1,20 +1,14 @@
 import restaurants from "../../constants.js";
-import Restaurant from "../../Restaurant.jsx";
+import Restaurant from "../restaurant/Restaurant.jsx";
 import { Layout } from "../layout/layout.jsx";
+import RestaurantSelector from "../restaurant-selector/RestaurantSelector.jsx";
 
 export const App = () => {
-    return (
-      <Layout>
+  return (
+    <Layout>
       <div className="app-container">
-        {restaurants.map((place) => (
-          <Restaurant
-            key={place.id}
-            name={place.name}
-            menu={place.menu}
-            reviews={place.reviews}
-          />
-        ))}
+        <RestaurantSelector restaurants={restaurants} />
       </div>
-      </Layout>
-    );
+    </Layout>
+  );
 };
