@@ -1,3 +1,5 @@
+import { Counter } from "./components/counter/counter";
+
 export default function Restaurant({ name, menu, reviews }) {
   return (
     <div className="card">
@@ -6,7 +8,9 @@ export default function Restaurant({ name, menu, reviews }) {
       <h3>Меню</h3>
       <ul className="dish-list">
         {menu.map((dish) => (
-          <li key={dish.id}>{dish.name}</li>
+          <li key={dish.id}>{dish.name}
+          <Counter />
+          </li>
         ))}
       </ul>
 
