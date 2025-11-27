@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-export const useCounter = () => {
-  const MIN = 0;
-  const MAX = 5;
+const MIN = 0;
+const MAX = 5;
 
+export const useCounter = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
