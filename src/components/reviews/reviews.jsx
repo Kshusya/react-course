@@ -1,3 +1,5 @@
+import { ReviewForm } from "../review-form/review-form";
+
 export default function Reviews({ reviews }) {
   return (
     <div>
@@ -7,6 +9,7 @@ export default function Reviews({ reviews }) {
           <li key={review.id}>{review.text}</li>
         ))}
       </ul>
+      <ReviewForm />
     </div>
   );
 }

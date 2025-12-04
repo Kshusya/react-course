@@ -3,7 +3,7 @@ import { useState } from "react";
 const MIN = 0;
 const MAX = 5;
 
-export const useCounter = () => {
+export const useDishCounter = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
