@@ -5,16 +5,17 @@ import {
   UPDATE_TEXT_ACTION,
 } from "../review-form/use-form.js";
 import { Counter } from "../counter/counter.jsx";
-import { useReviewCounter } from "../counter/use-review-counter.js";
 
 export const ReviewForm = () => {
-  const { name, adress, text, dispatch } = useForm();
-
-  const [count, increment, decrement] = useReviewCounter();
+  const { name, adress, text, count, dispatch } = useForm();
 
   return (
     <div>
-      <Counter count={count} increment={increment} decrement={decrement} />
+      <Counter
+        count={count}
+        increment={() => dispatch({ type: "INCREMENT" })}
+        decrement={() => dispatch({ type: "DECREMENT" })}
+      />
       <form>
         <div>
           <label>name</label>
