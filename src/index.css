@@ -40,3 +40,11 @@ ul {
   gap: 10px;
   align-items: center;
 }
+
+.progress-bar {
+  position: fixed;
+  height: 8px;
+  background-color: #af4f4c;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
