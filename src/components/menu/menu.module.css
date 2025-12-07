@@ -1,0 +1,6 @@
+.dishList li::before {
+    content: "🍽️ ";
+}
+.dishList li::before {
+    margin-right: 6px;
+}

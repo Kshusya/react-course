@@ -1,0 +1,7 @@
+.reviewsList li::before {
+    content: "✏️ ";
+}
+
+.reviewsList li::before {
+    margin-right: 6px;
+}

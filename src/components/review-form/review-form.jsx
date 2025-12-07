@@ -5,6 +5,7 @@ import {
   UPDATE_TEXT_ACTION,
 } from "../review-form/use-form.js";
 import { Counter } from "../counter/counter.jsx";
+import { Button } from "../button/button.jsx";
 
 export const ReviewForm = () => {
   const { name, adress, text, count, dispatch } = useForm();
@@ -44,14 +45,9 @@ export const ReviewForm = () => {
             }}
           />
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            dispatch({ type: "CLEAR_ACTION" });
-          }}
-        >
+        <Button onClick={() => dispatch({ type: "CLEAR_ACTION" })}>
           clear
-        </button>
+        </Button>
       </form>
     </div>
   );

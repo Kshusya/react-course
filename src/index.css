@@ -8,43 +8,6 @@ ul {
   padding-left: 0;
 }
 
-.dish-list li::before {
-  content: "🍽️ ";
-}
-
-.reviews-list li::before {
-  content: "✏️ ";
-}
-
-.reviews-list li::before,
-.dish-list li::before {
-  margin-right: 6px;
-}
-
 .app-container {
   padding: 24px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-  flex-basis: 33%;
-  height: auto;
-}
-
-.counter {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.progress-bar {
-  position: fixed;
-  height: 8px;
-  background-color: #af4f4c;
-  border-radius: 4px;
-  transition: width 0.3s ease;
 }
