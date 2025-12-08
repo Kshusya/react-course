@@ -6,6 +6,7 @@ import {
 } from "../review-form/use-form.js";
 import { Counter } from "../counter/counter.jsx";
 import { Button } from "../button/button.jsx";
+import styles from "../button/button.module.css";
 
 export const ReviewForm = () => {
   const { name, adress, text, count, dispatch } = useForm();
@@ -45,7 +46,7 @@ export const ReviewForm = () => {
             }}
           />
         </div>
-        <Button onClick={() => dispatch({ type: "CLEAR_ACTION" })}>
+        <Button className={styles.dangerButton} size={"medium"} onClick={() => dispatch({ type: "CLEAR_ACTION" })}>
           clear
         </Button>
       </form>

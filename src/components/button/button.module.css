@@ -1,0 +1,42 @@
+.button {
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttonSmall {
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+.buttonMedium {
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.buttonLarge {
+    padding: 12px 22px;
+    font-size: 17px;
+}
+
+.dangerButton {
+    background-color: #f63e3b;
+}
+
+.dangerButton:hover {
+    background-color: #b91c1c;
+}
+
+.dangerButton:active {
+    background-color: #7f1d1d;
+}
+
+.button:disabled {
+    background-color: #9ca3af;
+    color: #f3f4f6;
+    cursor: not-allowed;
+}
