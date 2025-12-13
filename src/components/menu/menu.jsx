@@ -1,22 +1,11 @@
-import { Counter } from "../counter/counter";
-import { useDishCounter } from "../counter/use-dish-counter";
-
-function Dish({ dish }) {
-  const [count, increment, decrement] = useDishCounter();
-
-  return (
-    <li>
-      {dish.name}
-      <Counter count={count} increment={increment} decrement={decrement} />
-    </li>
-  );
-}
+import Dish from "../dish/dish.jsx";
+import styles from "./menu.module.css";
 
 export default function Menu({ menu }) {
   return (
     <div>
       <h3>Меню</h3>
-      <ul className="dish-list">
+      <ul className={styles.dishList}>
         {menu.map((dish) => (
           <Dish key={dish.id} dish={dish} />
         ))}

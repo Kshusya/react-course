@@ -1,4 +1,4 @@
-import { ProgressBar } from "../progress-bar/progress-bar";
+import { ProgressBar } from "../progress-bar/progressBar";
 
 export const Layout = ({ children }) => {
   return (
